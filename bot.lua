@@ -169,7 +169,7 @@ function bot_run()
 
 	bot = bot.result
 
-	local bot_info = "Username = @"..bot.username.."\nName = "..bot.first_name.."\nId = "..bot.id.."\nDeveloper > @Lv_t_m\nChannel > @Senator_tea"
+	local bot_info = "Username = @"..bot.username.."\nName = "..bot.first_name.."\nId = "..bot.id.."\nDeveloper > @dr_slow_sudo\nChannel > @Senator_tea"
 	print(bot_info)
 
 	last_update = last_update or 0
@@ -311,7 +311,7 @@ if msg then
 	sendMessage(msg.chat.id,list,true,nil,true)
 	
 	elseif msg.text:match("^/version") then
-	sendMessage(msg.chat.id,'*pm resan Bot*\n\n_Developer_ > [Lv_t_m](https://telegram.me/Lv_t_m)\n[My Channel](https://telegram.me/Senator_tea)\n\n _Bot Version_ : *4*',true,nil,true)
+	sendMessage(msg.chat.id,'*pm resan Bot*\n\n_Developer_ > [dr_slow_sudo](https://telegram.me/dr_slow_sudo)\n[My Channel](https://telegram.me/Senator_tea)\n\n _Bot Version_ : *1.0.2*',true,nil,true)
 	
     elseif msg.text:match("^/help") and not is_admin(msg) then
 	sendMessage(msg.chat.id,'*Black Support Bot Help:*\n\n\n `-` /version\n`نمایش ورژن ربات`\n\n `-` /plist\n`دریافت لیست قیمت ها برای‌خرید گروه`\n\n `-` /start\n`دریافت اطلاعاتی درباره خرید گروه`',true,nil,true)
